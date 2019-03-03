@@ -12,11 +12,11 @@ namespace FinanceHelper
         double Amount { get; }
         string Currency { get; }
         string Name { get; }
-        string ValueInPLN { get; }
+        double ValueInPLN { get; }
         double ExchangePrice { get; }
         #endregion
 
-        string CalculateValueInPLN(double amount, double exchangeprice);
+        double CalculateValueInPLN(double amount, double exchangeprice);
 
 
 
@@ -34,7 +34,7 @@ namespace FinanceHelper
 
         public string Name { get; private set; }
 
-        public string ValueInPLN { get; private set; }
+        public double ValueInPLN { get; private set; }
 
         public double ExchangePrice { get; private set; }
         #endregion
@@ -50,15 +50,14 @@ namespace FinanceHelper
             ValueInPLN = CalculateValueInPLN(moneyAmount, exchange);
         }
 
-        public string CalculateValueInPLN(double amount, double exchangeprice)
+        public double CalculateValueInPLN(double amount, double exchangeprice)
         {
-            double returned;
             if (!(exchangeprice > 0))
             {
                 throw new ArgumentException("Exchange price must be greater than 0!");
             }
-            returned = amount * exchangeprice;
-            return String.Format("Wartość w PLN: {0}zł", returned);
+            return amount * exchangeprice;
+            
         }
     }
 }
