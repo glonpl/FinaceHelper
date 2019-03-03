@@ -92,22 +92,52 @@ namespace FinanceHelper
         #endregion
         public string ListTransactions()
         {
-            throw new NotImplementedException();
+            int total = Transactions.Count;
+            if (total == 0)
+                return string.Empty;
+            else
+            {
+                string echo= "";
+                for (int i = 0; i < total; i++)
+                { 
+                    echo += String.Format("==========={0}===========/n Date{1} /n Currency:{2} /n Amount: {3} /n Value: {4}/n",i,
+                        Transactions[i].TransactionDate.ToString("yyyy-MM-dd"), Transactions[i].Currency,
+                        Transactions[i].Amount.ToString("#.##"),Transactions[i].ValueInPLN.ToString());
+                }
+                return echo;
+            }
         }
 
         public string ShowTransaction(int i)
         {
-            throw new NotImplementedException();
+            int total = Transactions.Count;
+            if (total < i)
+                return "Transaction with this id doesn't exist.";
+            else
+            {
+
+                return String.Format("==========={0}===========/n Date{1} /n Currency:{2} /n Amount: {3} /n Value: {4}/n", i,
+                     Transactions[i].TransactionDate.ToString("yyyy-MM-dd"), Transactions[i].Currency,
+                     Transactions[i].Amount.ToString("#.##"), Transactions[i].ValueInPLN.ToString());
+
+            }
         }
 
         public bool DeleteTransaction(int i)
         {
-            throw new NotImplementedException();
+            int total = Transactions.Count;
+            if (total > i)
+                {
+                    Transactions.RemoveAt(i);
+                    return true;
+                }
+                else return false;
+        
         }
 
         public void DeleteAllTransactions()
         {
-            throw new NotImplementedException();
+            Transactions = new List<ITransaction>();
         }
         #endregion
     }
