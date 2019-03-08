@@ -92,15 +92,14 @@ namespace FinanceHelper
                 return false;
         }
 
-        public void CreateTransaction()
+        public void CreateTransaction(string nick, DateTime transactionDate, double amount, string currency, string name,double exchangeRate)
         {
-
+            if (String.IsNullOrEmpty(name))
+                throw new ArgumentNullException();
+            var owner = GetUser(nick);
+            var newTransaction = new Transaction(owner, transactionDate, amount, currency, name, exchangeRate);
+            owner.Transactions.Add(newTransaction);
+            Transactions.Add(newTransaction);
         }
-        /*
-         * manage()
-         * logowanie
-         * rejestracja
-         * 
-         */
     }
 }
