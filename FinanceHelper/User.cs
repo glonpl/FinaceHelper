@@ -15,6 +15,7 @@ namespace FinanceHelper
         string CountTendency(); // Bilans -12.34
         string CountIncomes(); // 12 przychodów wartości 1234zl
         string CountOutcomes();
+        string CountTransactions();
         string ListTransactions();
         string ShowTransaction(int i);
         bool DeleteTransaction(int i);
@@ -36,6 +37,11 @@ namespace FinanceHelper
             Transactions = new List<ITransaction>();
         }
         #region counting
+        public string CountTransactions()
+        {
+            return String.Format("You made {0} transactions.", Transactions.Count);
+        }
+
         public string CountTendency()
         {
             int total = Transactions.Count;
