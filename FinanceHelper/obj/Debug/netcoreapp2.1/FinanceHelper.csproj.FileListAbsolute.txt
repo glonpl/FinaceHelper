@@ -1,0 +1,8 @@
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\bin\Debug\netcoreapp2.1\FinanceHelper.deps.json
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\bin\Debug\netcoreapp2.1\FinanceHelper.runtimeconfig.json
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\bin\Debug\netcoreapp2.1\FinanceHelper.runtimeconfig.dev.json
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\bin\Debug\netcoreapp2.1\FinanceHelper.dll
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\obj\Debug\netcoreapp2.1\FinanceHelper.csprojAssemblyReference.cache
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\obj\Debug\netcoreapp2.1\FinanceHelper.csproj.CoreCompileInputs.cache
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\obj\Debug\netcoreapp2.1\FinanceHelper.AssemblyInfoInputs.cache
+C:\Users\Glon\Desktop\6semestr\NetTesting\P1\FinanceHelper\obj\Debug\netcoreapp2.1\FinanceHelper.AssemblyInfo.cs
