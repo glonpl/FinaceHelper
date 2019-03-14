@@ -5,7 +5,7 @@ App That helps You control your outcomes. Made for Uni classes, as DotNet Testin
 Library used to Manage and control Your financial incomes and outcomes. 
 ##### Functionalities:
 * Loging in
-* Regostering
+* Registering
 * Adding transactions
 * Removing transactions
 * listing transactions
